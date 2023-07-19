@@ -1,0 +1,76 @@
+.app-container{
+  width:90%;
+  background-color: #fff;
+  margin: 30px auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p{
+  margin-top: 25px;
+}
+
+.accordion{
+  max-width: 90%;
+  margin: 3em 5em 1em 5em;
+  padding: 0;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+  
+ul{
+  margin: 0;
+  padding: 0;
+}
+  
+li{
+  display: block;
+  border-radius: 0 0 10px 10px;
+}
+    
+label{
+  cursor: pointer;
+  display: block;
+  padding: 1em 1em;
+  overflow: hidden;
+  background: #42b983;
+  border-bottom: 1px solid #333;
+  box-shadow: inset 0 1px 1px rgba(#fff,0.2);
+}
+    
+  label:hover{
+    background: rgba(54,108,83,0.8);
+  }
+      
+  input[type="checkbox"]{
+    display: none;
+  }
+    
+  .sub > li{
+    cursor: pointer;
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    font-size: 0.9em;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+    
+  .sub > li:hover{
+    padding-left: 1.5em;
+    background: rgba(0,0,0,0.1);
+  }
+      
+  input:checked + .sub > li{
+    padding: 0.9em 1.2em;
+    height: auto;
+    opacity: 1;
+    margin-bottom: 10px;
+    border-left:1px solid #555;
+    border-right: 1px solid #555;
+    border-bottom: 1px solid #555;
+  }
+    
